@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+}
+
+
+.scroll-bg {
+    width: 100%;
+    height: 300px;
+    background-attachment: local;
+    position: relative;
+
+    overflow: auto;
+}
+
+.desktop-text {
+    display: inline;
+}
+.mobile-text {
+    display: none;
+}
+
+.video-text {
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 32px !important;
+        line-height: 32px !important;
+    }
+
+    .video-text {
+        flex-direction: column;
+    }
+
+    .desktop-text {
+        display: none;
+    }
+    .mobile-text {
+        display: inline;
+    }
+}
