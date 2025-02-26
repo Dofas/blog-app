@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function PostItem({ title, image, excerpt, date, slug }) {
-  const formattedDate = new Date(date).toLocaleDateString('uk-UA', {
+  const formattedDate = new Date(date).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',

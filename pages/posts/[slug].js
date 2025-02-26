@@ -1,8 +1,17 @@
 import PostContent from '@/components/posts/post-detail/post-content';
 import { getPostData, getPostsFiles } from '@/lib/post-util';
+import Head from 'next/head';
 
 export default function PostDetailPage({ post }) {
-  return <PostContent {...post} />;
+  return (
+    <>
+      <Head>
+        <title>{post.title}</title>
+        <meta name="description" content={post.excerpt} />
+      </Head>
+      <PostContent {...post} />
+    </>
+  );
 }
 
 export function getStaticProps({ params: { slug } }) {
