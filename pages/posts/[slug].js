@@ -3,6 +3,10 @@ import { getPostData, getPostsFiles } from '@/lib/post-util';
 import Head from 'next/head';
 
 export default function PostDetailPage({ post }) {
+  if (!post) {
+    return <></>;
+  }
+
   return (
     <>
       <Head>
