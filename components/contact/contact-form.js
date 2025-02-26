@@ -46,7 +46,7 @@ export default function ContactForm() {
   if (requestStatus === 'pending') {
     notificationData = {
       status: 'pending',
-      title: 'Sending message...',
+      title: 'Sending message, almost there...',
       message: 'Your message is on its way',
     };
   }

@@ -42,7 +42,6 @@ export default async function handler(req, res) {
     }
 
     await client.close();
-    console.log('newMessage', newMessage);
 
     res
       .status(201)
